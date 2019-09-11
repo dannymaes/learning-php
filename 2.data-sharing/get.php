@@ -1,5 +1,4 @@
 <?php include 'index.php'; ?>
-
 <?php
 $rowNumber = $_GET['rownumbers'];
 ?>

@@ -1,5 +1,3 @@
-
-
 <?php
 // arrays names and images:
 $strings = array("Kirito", "Erza", "Akatsuki", "Shiro", "Leo", "Rundel-Haus-Code", "Ken Kaneki", "Glenn Radars", "Momonga-Sama",);
@@ -11,16 +9,25 @@ $pictures = array("https://www.pixelstalk.net/wp-content/uploads/2016/08/HD-PC-W
 
 // random image in header:
 $randomBackground = $pictures[mt_rand(0, count($pictures) - 1)];
-$username ="Rafael Lambelin Selene Nijst";
+
 
 //$arr_string = explode("", $username);
-$split = str_split($username, 1);
-// var_dump($split);
-foreach($split as $value){
-  $rand_color = '#' . substr(md5(mt_rand()), 0, 6);
+
+
+
+
+
+
+function newName(){
+    $username ="Rafael Lambelin Selene Nijst";
+    $split = str_split($username, 1);
+
+    foreach($split as $value){
+      $rand_color = '#' . substr(md5(mt_rand()), 0, 6);
+      $newName = implode($split);
+      return "<span>$newName</span>";
+
 }
-$newName = implode($split);
-var_dump($newName);
 /*
 $r = rand(255);
 $g = rand(255);
@@ -82,7 +89,7 @@ var_dump($rgbColor);
         <div class="row">
           <div class="col-12">
              <div id="username-generator" class="my-4 p-4 bg-white shadow-sm border">
-             <span style="color: <?php echo $rand_color; ?>"><?php echo $username ?></span>
+              <?php echo $rand_color; ?>"><?php echo $username ?>
             </div>
           </div>
         </div>

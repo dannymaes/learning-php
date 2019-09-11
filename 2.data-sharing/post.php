@@ -1,8 +1,6 @@
 <?php include 'index.php'; ?>
 <?php
-
-$name =  htmlentities($_POST['username']);
-
+  $name =  htmlentities($_POST['username']);
 ?>
 
 <!DOCTYPE html>

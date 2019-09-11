@@ -42,7 +42,6 @@ input[type = submit]{
   border-radius: 15px;
   cursor: pointer;
 }
-
 /* extra css for get.php : */
 section{
   margin: 50px;
@@ -52,7 +51,6 @@ table{
   table-layout: fixed;
   background: linear-gradient(to right, #25c481, #25b7c4);
 }
-
 .tbl-header{
   background-color: rgba(255,255,255,0.3);
  }
